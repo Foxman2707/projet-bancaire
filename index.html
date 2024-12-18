@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Bancaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container mt-5">
+        <div class="form-title">Formulaire Bancaire</div>
+        <form id="bankForm">
+            <!-- Première section : Informations Personnelles -->
+            <div class="section-title"></div>
+
+            <!-- Ligne 1 : Nom -->
+            <div class="form-row d-flex justify-content-between">
+                <div class="col-md-3">
+                    <label for="nom" class="form-label green-text">Nom :</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control input-green" id="nom" placeholder="Votre nom" required>
+                </div>
+                <div class="col-md-3">
+                    <span class="error" id="nomError">Champ vide</span>
+                </div>
+            </div>
+
+            <!-- Ligne 2 : Prénom -->
+            <div class="form-row d-flex justify-content-between">
+                <div class="col-md-3">
+                    <label for="prenom" class="form-label green-text">Prénom :</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control input-green" id="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div class="col-md-3">
+                    <span class="error" id="prenomError">Champ vide</span>
+                </div>
+            </div>
+
+            <!-- Ligne 3 : Date de Naissance -->
+            <div class="form-row d-flex justify-content-between">
+                <div class="col-md-3">
+                    <label for="date" class="form-label green-text">Date de Naissance :</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control input-green" id="date" required>
+                </div>
+                <div class="col-md-3">
+                    <span class="error" id="dateError">Champ vide</span>
+                </div>
+            </div>
+
+            <!-- Ligne 4 : Email -->
+            <div class="form-row d-flex justify-content-between">
+                <div class="col-md-3">
+                    <label for="email" class="form-label green-text">Email :</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="email" class="form-control input-green" id="email" placeholder="Votre email" required>
+                </div>
+                <div class="col-md-3">
+                    <span class="error" id="emailError">Champ vide</span>
+                </div>
+            </div>
+
+            <!-- Ligne 5 : Code Confidentiel -->
+            <div class="form-row d-flex justify-content-between">
+                <div class="col-md-3">
+                    <label for="codeConfidentiel" class="form-label green-text">Code Confidentiel :</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control input-green" id="codeConfidentiel" placeholder="Code confidentiel" required>
+                </div>
+                <div class="col-md-3">
+                    <span class="error" id="codeConfidentielError">Champ vide</span>
+                </div>
+            </div>
+
+            <!-- Ligne 6 : Boutons -->
+            <div class="form-row d-flex justify-content-between">
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-envoyer">Envoyer</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="reset" class="btn btn-annuler">Annuler</button>
+                </div>
+                <div class="col-md-3">
+                    <!-- Cette colonne reste vide, juste pour équilibrer les colonnes -->
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

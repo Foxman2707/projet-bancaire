@@ -1,0 +1,83 @@
+/* Définir l'arrière-plan du body avec l'image */
+body {
+    background-image: url('../img/fond.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: Arial, sans-serif; /* Police Arial */
+}
+
+/* Conteneur du formulaire */
+.form-container {
+    background-color: rgba(226, 225, 225, 0.801); /* Fond légèrement gris */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Appliquer la police au titre "Formulaire Bancaire" */
+.form-title {
+    font-family: 'Roboto', sans-serif;  /* Remplacez 'Roboto' par la police de votre choix */
+    font-weight: bold;
+    font-size: 2rem;
+    color: #28a745;  /* Exemple de couleur verte pour le titre */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Section titres */
+.section-title {
+    font-weight: bold;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+}
+
+/* Colonne 1 : Intitulés en vert */
+.green-text {
+    color: #28a745; /* Couleur verte */
+}
+
+/* Colonne 2 : Champs de saisie avec bordure verte */
+.input-green {
+    border: 1px solid #28a745; /* Bordure verte */
+    background-color: #bdb1b1;
+    color: #fff;
+    padding: 8px;
+}
+
+/* Colonne 3 : Messages d'erreur */
+.error {
+    color: red;
+    font-size: 0.85rem;
+}
+
+/* Bouton "Envoyer" - Fond vert et texte blanc */
+.btn-envoyer {
+    background-color: #28a745;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border: none;
+    width: 100%;
+}
+
+/* Bouton "Annuler" - Fond vert et texte blanc */
+.btn-annuler {
+    background-color: #28a745;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border: none;
+    width: 100%;
+}
+
+/* Style des boutons au survol */
+.btn-envoyer:hover, .btn-annuler:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Survol des champs de saisie */
+.input-green:focus {
+    outline: 2px solid #28a745; /* Bordure verte lors du focus */
+}
